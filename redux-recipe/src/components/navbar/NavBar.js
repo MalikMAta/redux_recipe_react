@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
-import SignedInLinks from "./authLinks/SignedInLinks";
-import Sidebarsignedin from './SideBar/SideBarSignedInLinks'
+// Navbar
+import SignedInLinks from "./navBarLinks/SignedInLinks";
+import SignedOutLinks from "./navBarLinks/SignedOutlinks";
+
+// Side Nav bar
+import Sidebarsignedin from "./sideBarLinks/SideBarSignedInLinks";
+import SidebarsignedOut from "./sideBarLinks/SideBarSignedoutLinks";
 
 function NavBar() {
   const [on, setOn] = useState(window.innerWidth);
@@ -21,8 +26,13 @@ function NavBar() {
   return (
     <>
       <nav className="navBar center">
-      <div><SignedInLinks />  </div>
-      
+        <div>
+          <SignedInLinks />
+        </div>
+        <div>
+          <SignedOutLinks />
+        </div>
+
         <div
           className={on > 992 ? "hamburgerNV" : "hamburgerV"}
           onClick={() => {
@@ -35,9 +45,11 @@ function NavBar() {
         </div>
       </nav>
       {showMenu ? (
-        <div
-          className={on < 992 ? "sideBarVisible" : "sideBarNotVisible"}
-        > <Sidebarsignedin /> </div>
+        <div className={on < 992 ? "sideBarVisible" : "sideBarNotVisible"}>
+          
+          <Sidebarsignedin />
+          <SidebarsignedOut />
+        </div>
       ) : (
         console.log("not true")
       )}

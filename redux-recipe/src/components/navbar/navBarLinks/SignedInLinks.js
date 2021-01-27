@@ -1,14 +1,15 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 
 const SignedInLinks = () => {
 
     return (
         <ul id="nav-mobile" className="right hide-on-med-and-down SignedInnavBarLinks">
         <li>
-          <a href="sass.html">Sign Out</a>
+          <NavLink to = "/">Sign Out</NavLink>
         </li>
         <li>
-          <a href="badges.html">Create</a>
+        <NavLink to = "/create">Create</NavLink>
         </li>
         <li>
           <a>Recipe is life</a>

@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 
-function add() {
+function Create() {
+
+  
   return (
       <div className="create">
 
@@ -45,4 +47,4 @@ function add() {
   );
 }
 
-export default add;
+export default Create;

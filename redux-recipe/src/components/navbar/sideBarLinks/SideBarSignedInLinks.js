@@ -1,15 +1,16 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
-const SignedInLinks = () => {
+const SideBarSignedInLinks = () => {
 
     return (
         <div className="sideBarSignedInLinks">
         <ul >
-        <li >
-          <a href="sass.html">Sign Out</a>
+        <li>
+          <NavLink to = "/">Sign Out</NavLink>
         </li>
         <li>
-          <a href="badges.html">Create</a>
+        <NavLink to = "/create">Create</NavLink>
         </li>
         <li>
           <a>Recipe is life</a>
@@ -18,4 +19,4 @@ const SignedInLinks = () => {
       </div>
     )
 }
-export default SignedInLinks
+export default SideBarSignedInLinks
