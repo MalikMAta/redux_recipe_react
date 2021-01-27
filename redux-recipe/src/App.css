@@ -1,52 +1,58 @@
-*{
-  border:0;
+* {
+  border: 0;
   padding: 0;
 }
 
-.sideBarNotVisible{
 
-  width: 40%;
-  height: 100vh;
-  background-color: red;
-  transition: width 6s;
-  visibility: hidden;
-
-}
-
-.sideBarVisible{
-
-  width: 20%;
-  height: 100vh;
-  background-color: black;
-  transition:all 4s ease;
-}
-
-/* .sideBarVisible:hover{
-
-  width: 100%;
-  height: 100vh;
-  background-color: red;
-  transition-duration:  6s;
-
-} */
-
-.navBar{
+.navBar {
   background-color: black;
 }
 
-.hamburgerV{
-  width: 50px;
-  padding: 10px;
+.SignedInnavBarLinks  > li > a{
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+}
+
+
+
+.sideBarNotVisible {
+  visibility: hidden;
+}
+
+.sideBarVisible {
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 25%;
+  position: fixed;
+  z-index: 1;
 
 }
 
-.hamburgerNV{
+.sideBarSignedInLinks >ul > li> a{
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+}
+
+  
+
+
+.hamburgerV {
+  width: 50px;
+  padding: 10px;
+}
+
+.hamburgerNV {
   width: 50px;
   padding: 10px;
   visibility: hidden;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: auto;
   height: 5px;
   background-color: white;
@@ -54,7 +60,16 @@
   transition: 0.4s;
 }
 
-.change .bar1 {
+
+.create{
+  padding:0 25% 0  25%;
+  text-align: center;
+}
+.create > p{
+  font-size: 40px;
+  font-family: 'Brush Script MT', cursive;
+}
+/* .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
@@ -64,4 +79,4 @@
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
-}
+} */
