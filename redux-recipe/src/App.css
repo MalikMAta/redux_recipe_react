@@ -1,6 +1,7 @@
 * {
   border: 0;
   padding: 0;
+  text-align: center;
 }
 
 
@@ -80,3 +81,50 @@
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 } */
+
+
+
+
+
+/* Header */
+
+.header{
+  background-color: black;
+  margin: 5% 0 0 0;
+  height: 25vh;
+  margin: 0 5% 0 5%;
+  
+}
+
+
+.header > p {
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+
+
+.rowL{
+  margin: 1% 5% 0 5%;
+
+ display: grid;
+ display: grid;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+
+}
+
+.indiv-recipe{
+  background-color: black;
+}
+
+.indiv-recipe > p{
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 25px;
+  padding-bottom: 5%;
+}
+

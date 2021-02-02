@@ -20,7 +20,7 @@ function NavBar() {
   });
 
   const changeElement = () => {
-    console.log("hello");
+    // console.log("hello");
   };
 
   return (

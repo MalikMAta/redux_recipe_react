@@ -1,9 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Header from './Header'
+import {Data} from '../data/Data'
+import List from '../recipe/List'
 
 function Main() {
+
+
+
+
     return (
         <div>
-            hello
+            <Header />
+
+            <List Data ={Data} />
+   
+        
+
+        
         </div>
     )
 }
