@@ -1,24 +1,30 @@
-import React, {useState} from 'react'
-import Header from './Header'
-import {Data} from '../data/Data'
-import List from '../recipe/List'
+import React from "react";
+import Header from "./Header";
+import { connect } from "react-redux";
+import { compose } from "redux";
+import RecipeList from "../recipe/RecipeList";
+import { firestoreConnect } from "react-redux-firebase";
 
-function Main() {
+function Main(props) {
 
+    const {recipeList} = props
+  return (
+    <div>
+      <Header />
 
-
-
-    return (
-        <div>
-            <Header />
-
-            <List Data ={Data} />
-   
-        
-
-        
-        </div>
-    )
+      <RecipeList recipe ={recipeList} />
+    </div>
+  );
 }
 
-export default Main
+const mapStateToProps = (state) => {
+  console.log(state)
+  return {
+    recipeList: state.firestore.ordered.recipeList,
+  };
+};
+
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([{ collection: "recipeList" }])
+)(Main);

@@ -7,7 +7,7 @@ const SideBarSignedoutLinks = () => {
       <ul>
 
         <li>
-          <a>Recipe is life</a>
+          <p>Recipe is life</p>
         </li>
 
         <li>

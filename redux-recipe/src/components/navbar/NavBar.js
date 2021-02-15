@@ -19,9 +19,8 @@ function NavBar() {
     window.addEventListener("resize", checkSize);
   });
 
-  const changeElement = () => {
-    // console.log("hello");
-  };
+  // const changeElement = () => {
+  // };
 
   return (
     <>

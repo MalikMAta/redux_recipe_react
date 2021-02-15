@@ -13,7 +13,7 @@ const SideBarSignedInLinks = () => {
         <NavLink to = "/create">Create</NavLink>
         </li>
         <li>
-          <a>Recipe is life</a>
+          <p>Recipe is life</p>
         </li>
       </ul>
       </div>

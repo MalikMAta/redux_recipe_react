@@ -9,7 +9,7 @@ const SignedInLinks = () => {
           <NavLink to = "/signin">Sign In</NavLink>
         </li>
         <li>
-          <a>Recipe is life</a>
+          <p>Recipe is life</p>
         </li>
       </ul>
     )

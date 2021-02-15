@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const SignedInLinks = () => {
 
+
     return (
         <ul id="nav-mobile" className="right hide-on-med-and-down SignedInnavBarLinks">
         <li>
@@ -12,7 +13,7 @@ const SignedInLinks = () => {
         <NavLink to = "/create">Create</NavLink>
         </li>
         <li>
-          <a>Recipe is life</a>
+          <p> Recipe is life</p>
         </li>
       </ul>
     )
