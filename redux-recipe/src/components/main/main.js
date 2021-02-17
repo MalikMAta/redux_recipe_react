@@ -2,23 +2,51 @@ import React from "react";
 import Header from "./Header";
 import { connect } from "react-redux";
 import { compose } from "redux";
-import RecipeList from "../recipe/RecipeList";
-import { firestoreConnect } from "react-redux-firebase";
+import { firestoreConnect } from "react-redux-firebase"
+import RecipeList from '../recipe/RecipeList'
 
 function Main(props) {
 
-    const {recipeList} = props
+  const { recipeList } = props;
   return (
-    <div>
-      <Header />
 
-      <RecipeList recipe ={recipeList} />
-    </div>
+    <>
+      <div>
+        <Header />
+        <RecipeList recipeList={recipeList} />
+
+        {/* {recipeList &&
+          recipeList.map((rec) => {
+            return (
+              <>
+                <h1 key={rec.id}>{rec.recipeAuthor}</h1>
+
+                <ul>
+                  {rec.recipe.map((sub) => {
+                    
+                    return (
+                      <li>
+                   
+
+                         {counter} {sub.ingredients}
+
+                      </li>
+                    );
+                   
+                  })}
+
+                  <h2>{rec.summary}</h2>
+                </ul>
+              </>
+            );
+          })} */}
+      </div>
+    </>
   );
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
+  console.log(state);
   return {
     recipeList: state.firestore.ordered.recipeList,
   };

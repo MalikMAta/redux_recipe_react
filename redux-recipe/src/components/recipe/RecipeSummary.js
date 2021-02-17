@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
 
-function RecipeSummary({recipeList}) {
+function RecipeSummary({ list }) {
+  return (
+    <div>
+      {
+           
+            <>
+              <h3>{list.title}</h3>
 
-    return (
-        <div>
-          ef
-            
-        </div>
-    )
+            </>
+          
+        }
+    </div>
+  );
 }
 
-export default RecipeSummary
+export default RecipeSummary;
